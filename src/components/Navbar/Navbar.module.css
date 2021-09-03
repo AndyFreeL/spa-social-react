@@ -1,0 +1,6 @@
+.body{
+    background: aquamarine;
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+}
