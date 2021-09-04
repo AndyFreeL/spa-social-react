@@ -1,0 +1,36 @@
+.item{
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.header{}
+.text_zone{
+    padding: 8px;
+}
+.like_zone{
+    padding: 10px;
+}
+.post_text{
+    padding: 0 12px;
+}
+.katana{
+transform: rotate(-2deg);
+    opacity: 0.6;
+}
+.decor{
+display: flex;
+    justify-content: space-between;
+
+}
+.decor_logo{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}

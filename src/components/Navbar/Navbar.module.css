@@ -1,6 +1,10 @@
 .body{
-    background: aquamarine;
     grid-area: navbar;
+    height: 170px;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: #edeef0;
 }

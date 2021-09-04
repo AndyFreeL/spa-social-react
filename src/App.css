@@ -8,11 +8,17 @@
     margin: 0 auto;
     width: 990px;
     padding: 0 10px;
+    grid-gap: 10px;
 }
-.content{
-grid-area: content;
-    background: aqua;
+.app-wrapper-content{
+    grid-area: content;
+    /*background: #edeef0;*/
+    /*border: 1px solid rgba(0,0,0,0.2);*/
+    /*box-shadow: 5px 5px 15px rgba(0,0,0,0.2);*/
+    /*border-radius: 5px;*/
 }
+
+
 .right{
     grid-area: right;
     background: gold;
