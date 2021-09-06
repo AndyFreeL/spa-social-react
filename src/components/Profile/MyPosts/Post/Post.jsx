@@ -22,6 +22,10 @@ const Post = (props) => {
             <div className={s.like_zone}>
                 <div><span>Like</span></div>
             </div>
+            <div className={s.decor}>
+                <div><img className={s.decor_logo} src={decorLogo} alt=""/></div>
+                <div><img className={s.decor_logo} src={decorLogo} alt=""/></div>
+            </div>
 
 
         </div>

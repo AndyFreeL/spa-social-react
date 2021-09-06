@@ -1,9 +1,10 @@
 .header{
+    z-index: 5;
     height: 54px;
     width: 100%;
     background: #edeef0;
     grid-area: header;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
