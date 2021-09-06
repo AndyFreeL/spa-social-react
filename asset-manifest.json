@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/spa-social-react/static/css/main.0d68e1af.chunk.css",
-    "main.js": "/spa-social-react/static/js/main.3c3d39af.chunk.js",
-    "main.js.map": "/spa-social-react/static/js/main.3c3d39af.chunk.js.map",
-    "runtime-main.js": "/spa-social-react/static/js/runtime-main.cc62f094.js",
-    "runtime-main.js.map": "/spa-social-react/static/js/runtime-main.cc62f094.js.map",
-    "static/js/2.fff349db.chunk.js": "/spa-social-react/static/js/2.fff349db.chunk.js",
-    "static/js/2.fff349db.chunk.js.map": "/spa-social-react/static/js/2.fff349db.chunk.js.map",
-    "static/js/3.ce6aac30.chunk.js": "/spa-social-react/static/js/3.ce6aac30.chunk.js",
-    "static/js/3.ce6aac30.chunk.js.map": "/spa-social-react/static/js/3.ce6aac30.chunk.js.map",
+    "main.css": "/spa-social-react/static/css/main.e4c1d518.chunk.css",
+    "main.js": "/spa-social-react/static/js/main.bdd15e3f.chunk.js",
+    "main.js.map": "/spa-social-react/static/js/main.bdd15e3f.chunk.js.map",
+    "runtime-main.js": "/spa-social-react/static/js/runtime-main.13376cf1.js",
+    "runtime-main.js.map": "/spa-social-react/static/js/runtime-main.13376cf1.js.map",
+    "static/js/2.b07681b4.chunk.js": "/spa-social-react/static/js/2.b07681b4.chunk.js",
+    "static/js/2.b07681b4.chunk.js.map": "/spa-social-react/static/js/2.b07681b4.chunk.js.map",
+    "static/js/3.0c7fa5f7.chunk.js": "/spa-social-react/static/js/3.0c7fa5f7.chunk.js",
+    "static/js/3.0c7fa5f7.chunk.js.map": "/spa-social-react/static/js/3.0c7fa5f7.chunk.js.map",
     "index.html": "/spa-social-react/index.html",
-    "static/css/main.0d68e1af.chunk.css.map": "/spa-social-react/static/css/main.0d68e1af.chunk.css.map",
-    "static/js/2.fff349db.chunk.js.LICENSE.txt": "/spa-social-react/static/js/2.fff349db.chunk.js.LICENSE.txt",
+    "static/css/main.e4c1d518.chunk.css.map": "/spa-social-react/static/css/main.e4c1d518.chunk.css.map",
+    "static/js/2.b07681b4.chunk.js.LICENSE.txt": "/spa-social-react/static/js/2.b07681b4.chunk.js.LICENSE.txt",
     "static/media/decorLogo.c3eda4a7.png": "/spa-social-react/static/media/decorLogo.c3eda4a7.png",
     "static/media/katanaBottom.f2cf9cca.png": "/spa-social-react/static/media/katanaBottom.f2cf9cca.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc62f094.js",
-    "static/js/2.fff349db.chunk.js",
-    "static/css/main.0d68e1af.chunk.css",
-    "static/js/main.3c3d39af.chunk.js"
+    "static/js/runtime-main.13376cf1.js",
+    "static/js/2.b07681b4.chunk.js",
+    "static/css/main.e4c1d518.chunk.css",
+    "static/js/main.bdd15e3f.chunk.js"
   ]
 }
