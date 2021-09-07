@@ -21,9 +21,13 @@
 }
 
 .dialog{
-    padding-right: 10px;
+    width: 150px;
+    padding-right: 15px;
 
 }
 .messages{
-    padding-left: 35px;
+    padding-left: 10px;
+}
+.contact{
+    display: flex;
 }
