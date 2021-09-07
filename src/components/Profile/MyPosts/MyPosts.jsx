@@ -3,10 +3,16 @@ import Post from "./Post/Post";
 
 const MyPosts = () => {
 
-    let postData = [
+    let posts = [
         {id:1, message:'Some text from post 1', likesCount: 23},
-        {id:1, message:'Some text from post 2Some text from post 2Some text from post 2Some text from post 2Some text from post 2Some text from post 2S', likesCount: 41}
-    ]
+        {id:2, message:'Some text from post 2Some text from post 2Some text from post ' +
+                '2Some text from post 2Some text from post 2Some text from post 2S', likesCount: 41},
+        {id:3, message:'Some text from post 1', likesCount: 21},
+        {id:4, message:'Some text from post 2Some text from post 2Some text from post 2Some text' +
+                ' from post 2Some text from post 2Some text from post 2S', likesCount: 61}
+    ];
+
+    let postsElement = posts.map(p=><Post message={p.message} likesCount={p.likesCount}/>)
 
     return (
         <div>
@@ -15,8 +21,7 @@ const MyPosts = () => {
                 <textarea name="" id="" cols="30" rows="1"></textarea>
                 <button>Add post</button>
             </div>
-            <Post message={postData[0].message} likesCount={postData[0].likesCount}/>
-            <Post message={postData[1].message} likesCount={postData[1].likesCount}/>
+            {postsElement}
         </div>
 
     )

@@ -1,7 +1,9 @@
 import s from '../Post/Post.module.css'
 import katana from '../../../../assets/images/katanaBottom.png'
 import decorLogo from '../../../../assets/images/decorLogo.png'
+
 const Post = (props) => {
+
     return (
         <div className={s.item}>
             <div className={s.decor}>
