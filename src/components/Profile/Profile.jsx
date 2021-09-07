@@ -1,14 +1,14 @@
 import s from '../Profile/Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
+
 const Profile = () => {
     return (
 
-            <div className={s.content}>
-                <ProfileInfo/>
-               <MyPosts/>
-
-            </div>
+        <div className={s.content}>
+            <ProfileInfo/>
+            <MyPosts/>
+        </div>
 
     )
 }

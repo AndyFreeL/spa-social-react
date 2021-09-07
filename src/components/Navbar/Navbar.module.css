@@ -1,4 +1,5 @@
 .body{
+    width: 190px;
     top:75px;
     position: fixed;
     grid-area: navbar;

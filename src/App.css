@@ -11,6 +11,7 @@
     grid-gap: 10px;
 }
 .app-wrapper-content{
+    padding-top: 5px;
     grid-area: content;
     /*background: #edeef0;*/
     /*border: 1px solid rgba(0,0,0,0.2);*/

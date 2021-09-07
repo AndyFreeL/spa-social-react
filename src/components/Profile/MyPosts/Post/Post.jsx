@@ -20,7 +20,7 @@ const Post = (props) => {
                 <img className={s.katana}  src={katana} alt=""/>
             </div>
             <div className={s.like_zone}>
-                <div><span>Like</span></div>
+                <div><span>Like {props.likesCount}</span></div>
             </div>
             <div className={s.decor}>
                 <div><img className={s.decor_logo} src={decorLogo} alt=""/></div>
