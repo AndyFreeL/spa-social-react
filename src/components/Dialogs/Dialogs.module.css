@@ -25,9 +25,11 @@
     padding-right: 15px;
 
 }
-.messages{
+.messages_prim{
+    display: flex;
     padding-left: 10px;
 }
+
 .contact{
     display: flex;
 }
