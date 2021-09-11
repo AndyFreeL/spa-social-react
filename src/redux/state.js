@@ -1,4 +1,7 @@
-import {rerenderTree} from "../render";
+let rerenderTree = () => {
+    subscribe()
+}
+
 
 let state = {
     profilePage: {
@@ -34,19 +37,25 @@ let state = {
     }
 }
 
-export let addPost = () => {
+export const addPost = () => {
     let newPost = {
         id: 5,
         message: state.profilePage.newPostText,
         likesCount: 0
     }
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderTree(state);
 }
 
-export let updatePostText = (newPostText) => {
+export const updatePostText = (newPostText) => {
     state.profilePage.newPostText = newPostText;
     rerenderTree(state);
 }
+
+export const subscribe = (observer) => {
+    rerenderTree = observer;
+}
+
 
 export default state;

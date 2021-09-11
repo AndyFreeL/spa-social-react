@@ -10,8 +10,6 @@ const MyPosts = (props) => {
 
     let addPost = () => {
         props.addPost();
-        props.updatePostText('')
-
     };
 
     let onPostChange=()=>{
