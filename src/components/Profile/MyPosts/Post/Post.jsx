@@ -1,6 +1,7 @@
 import s from '../Post/Post.module.css'
 import katana from '../../../../assets/images/katanaBottom.png'
 import decorLogo from '../../../../assets/images/decorLogo.png'
+import ava from '../../../../assets/images/avatar.png'
 
 const Post = (props) => {
 
@@ -12,7 +13,7 @@ const Post = (props) => {
             </div>
 
             <div className={s.header}>
-                <img className={s.avatar} src="https://lh3.googleusercontent.com/proxy/SY24GltMMjOrnh8kV4wA6TNBjOfhGrI3GnjI5ScEJ540PvyVbAtiqkOVp6qgjgDPaf59RibqGsaG2WJyUVsaQilp8Wj-t95fHcQTXIjOQQ" alt=""/>
+                <img className={s.avatar} src={ava} alt=""/>
             </div>
 
             <div className={s.text_zone}>
