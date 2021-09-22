@@ -25,10 +25,17 @@
     padding-right: 15px;
 
 }
+.messages_items{
+
+}
 .messages_prim{
     display: flex;
     padding-left: 10px;
 }
+.message_enter_field{
+padding: 20px 0 0 10px;
+}
+.user_ava{}
 
 .contact{
     display: flex;
