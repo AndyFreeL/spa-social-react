@@ -1,6 +1,7 @@
 .body{
     width: 200px;
     grid-area: right;
+    top:75px;
     height: 170px;
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +10,7 @@
     border-radius: 5px;
     background: #edeef0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .user img{
     width: 48px;
