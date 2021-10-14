@@ -1,10 +1,10 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
-import ProfileInfo from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
+import Profile from "./components/Profile/Profile";
 import {BrowserRouter, Route} from "react-router-dom";
 import Rightbar from "./components/Rightbar/Rightbar";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 const App = (props) => {
     return (
@@ -14,13 +14,8 @@ const App = (props) => {
                 <Navbar/>
                 <Rightbar/>
                 <div className="app-wrapper-content">
-                    <Route path="/profile" render={()=><ProfileInfo
-                        state={props.state.profilePage}
-                        dispatch={props.dispatch}/>}/>
-                    <Route path="/dialogs" render={()=><Dialogs
-                        state={props.state.dialogsPage}
-                        dispatch={props.dispatch}
-                    />}/>
+                    <Route path="/profile" render={()=><Profile store={props.store} />}/>
+                    <Route path="/dialogs" render={()=><DialogsContainer store={props.store} />}/>
                 </div>
             </div>
         </BrowserRouter>
