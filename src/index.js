@@ -2,11 +2,14 @@ import reportWebVitals from './reportWebVitals';
 import store from './redux/redux-store';
 import ReactDOM from "react-dom";
 import App from "./App";
+import {Provider} from "react-redux";
 
 
-let rerenderTree=(state)=>{
+let rerenderTree=()=>{
 ReactDOM.render(
-    <App store={store} state={state} dispatch={store.dispatch.bind(store)}/>, document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>, document.getElementById('root')
 )}
 
 rerenderTree(store.getState());
