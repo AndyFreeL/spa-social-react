@@ -1,4 +1,3 @@
-import ava from '../assets/images/avatar.png'
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET-USERS';
