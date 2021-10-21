@@ -2,6 +2,7 @@ import React from 'react';
 import s from "./users.module.css";
 import ava from "../../assets/images/avatar.png";
 
+
 const Users = (props) => {
 
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -10,6 +11,8 @@ const Users = (props) => {
   for(let i=1;i<=pagesCount; i++){
     pages.push(i);
   }
+
+
 
   return (
       <div>
