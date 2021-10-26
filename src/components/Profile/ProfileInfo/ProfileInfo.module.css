@@ -1,6 +1,35 @@
 .content{
-background: #edeef0;
-border: 1px solid rgba(0,0,0,0.2);
-box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-border-radius: 5px;
+}
+.body{
+    display: grid;
+    grid-template-areas:
+"gAreaL gAreaR gAreaR";
+    grid-template-columns: 3fr 7fr ;
+}
+.gAreaL{
+    background: #edeef0;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+}
+.gAreaR{
+    background: #edeef0;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+
+
+.photo{
+    padding: 10px;
+}
+.photo img{
+    width: 200px;
+    height: 200px;
+    border-radius:5px ;
+}
+.about{
+    padding: 20px;
 }
