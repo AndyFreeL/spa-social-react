@@ -33,3 +33,7 @@
 .about{
     padding: 20px;
 }
+.status{
+    cursor: pointer;
+    font-size: 18px;
+}
