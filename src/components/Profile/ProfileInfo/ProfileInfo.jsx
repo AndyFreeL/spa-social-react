@@ -1,6 +1,7 @@
 import s from '../ProfileInfo/ProfileInfo.module.css'
 import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatus from './ProfileStatus'
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 const ProfileInfo = (props) => {
 
@@ -21,7 +22,8 @@ const ProfileInfo = (props) => {
             <div className={s.gAreaR}>
               <div>{props.profile.fullName}</div>
               <div>{props.profile.aboutMe}</div>
-              <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+              <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+              {/*<ProfileStatus status={props.status} updateStatus={props.updateStatus}/>*/}
             </div>
           </div>
 

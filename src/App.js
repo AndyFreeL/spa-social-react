@@ -12,6 +12,9 @@ import {connect} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/common/Preloader/Preloader";
+import store from "./redux/redux-store";
+import {Provider} from "react-redux";
+import {BrowserRouter} from "react-router-dom";
 
 
 class App extends Component {
@@ -26,6 +29,8 @@ class App extends Component {
       }
 
         return (
+          <BrowserRouter>
+            <Provider store={store}>
               <div className="app-wrapper">
                   <HeaderContainer/>
                   <Navbar/>
@@ -37,7 +42,8 @@ class App extends Component {
                       <Route path="/login" render={() => <Login/>}/>
                   </div>
               </div>
-
+            </Provider>
+          </BrowserRouter>
         );
     }
 }
