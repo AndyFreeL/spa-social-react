@@ -1,13 +1,11 @@
+import React, {Component} from "react";
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import {Route, withRouter} from "react-router-dom";
+import {Route, Switch, withRouter} from "react-router-dom";
 import Rightbar from "./components/Rightbar/Rightbar";
-import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
-import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Login from "./components/Login/Login";
-import {Component} from "react";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
@@ -16,6 +14,8 @@ import {Provider} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
 import store from "./redux/redux-store";
 
+const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
+const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
 
 class App extends Component {
   componentDidMount() {
@@ -33,10 +33,14 @@ class App extends Component {
         <Navbar/>
         <Rightbar/>
         <div className="app-wrapper-content">
-          <Route path="/profile/:userId?" render={() => <ProfileContainer/>}/>
-          <Route path="/dialogs" render={() => <DialogsContainer/>}/>
-          <Route path="/users" render={() => <UsersContainer/>}/>
-          <Route path="/login" render={() => <Login/>}/>
+          <React.Suspense fallback={<div>!!!!!</div>}>
+            <Switch>
+              <Route path="/profile/:userId?" render={() => <ProfileContainer/>}/>
+              <Route path="/dialogs" render={() => <DialogsContainer/>}/>
+              <Route path="/users" render={() => <UsersContainer/>}/>
+              <Route path="/login" render={() => <Login/>}/>
+            </Switch>
+          </React.Suspense>
         </div>
       </div>
     );
@@ -47,7 +51,7 @@ const mapStateToProps = (state) => ({
   initialized: state.app.initialized
 });
 
-let AppContainer =  compose(
+let AppContainer = compose(
   withRouter,
   connect(mapStateToProps, {initializeApp}))(App);
 
