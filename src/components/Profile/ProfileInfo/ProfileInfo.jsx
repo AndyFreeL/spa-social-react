@@ -1,11 +1,10 @@
 import s from '../ProfileInfo/ProfileInfo.module.css'
 import Preloader from "../../common/Preloader/Preloader";
-import ProfileStatus from './ProfileStatus'
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
-const ProfileInfo = (props) => {
+const ProfileInfo = ({profile, updateStatus, status}) => {
 
-  if (!props.profile){
+  if (!profile){
     return <Preloader/>
   }
     return (
@@ -13,16 +12,16 @@ const ProfileInfo = (props) => {
           <div className={s.body}>
             <div className={s.gAreaL}>
               <div className={s.profile}>
-                <div className={s.photo}><img src={props.profile.photos.large}/></div>
+                <div className={s.photo}><img src={profile.photos.large}/></div>
                 <button>Follow</button>
               </div>
               <div className={s.contacts}>
               </div>
             </div>
             <div className={s.gAreaR}>
-              <div>{props.profile.fullName}</div>
-              <div>{props.profile.aboutMe}</div>
-              <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+              <div>{profile.fullName}</div>
+              <div>{profile.aboutMe}</div>
+              <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
               {/*<ProfileStatus status={props.status} updateStatus={props.updateStatus}/>*/}
             </div>
           </div>

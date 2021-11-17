@@ -21,8 +21,7 @@ export const usersAPI = {
 
 export const authAPI = {
   getAuth() {
-    return instance.get(`auth/me`)
-      .then(response => response.data);
+    return instance.get(`auth/me`);
   },
   login(email, password, rememberMe = false) {
     return instance.post(`auth/login`, {email, password, rememberMe});
@@ -34,8 +33,7 @@ export const authAPI = {
 
 export const profileAPI = {
   getProfile(userId) {
-    return instance.get(`/profile/` + userId)
-      .then(response => response.data);
+    return instance.get(`/profile/` + userId);
   },
   getStatus(userId) {
     return instance.get(`/profile/status/` + userId);
