@@ -10,3 +10,7 @@
     color: red;
     border: 1px solid red;
 }
+.captchaImg{
+    width: 300px;
+    height: 120px;
+}
