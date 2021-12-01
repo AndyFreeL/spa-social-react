@@ -1,5 +1,6 @@
 import s from '../Header/Header.module.css'
 import logo from '../../assets/icons/logo.png'
+import logout from '../../assets/icons/logout.png'
 import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
@@ -9,10 +10,10 @@ const Header = (props) => {
         <a href="#"><img className={s.logo} src={logo} alt=""/></a>
         <div className={s.login}>
           {!props.isAuth
-            ? <NavLink to={'/login'}>Login</NavLink>
-            : <div>
+            ? <div><NavLink to={'/login'}>Login</NavLink></div>
+            : <div className={s.loginBlock}>
               {props.login}
-              <button onClick={props.logout}>Logout</button>
+              <div className={s.logout} onClick={props.logout}><img src={logout}/></div>
             </div>}
         </div>
       </div>

@@ -1,7 +1,14 @@
 .selectedPage{
   font-weight: bold;
+  color: blue;
 }
 .paginatorLine{
   height: 40px;
   width: 400px;
+  padding-left: 10px;
+}
+span{
+  color: gray;
+  padding: 3px;
+  cursor: pointer;
 }

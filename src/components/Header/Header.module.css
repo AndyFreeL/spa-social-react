@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgb(222, 217, 217);
+    font-size: 24px;
 }
 .content{
     height: 50px;
@@ -24,4 +25,16 @@
 }
 .login{
     padding: 15px 0 0 0 ;
+    cursor: pointer;
+}
+.logout{
+    padding-left: 7px;
+}
+.logout img{
+    width: 18px;
+    height: 18px;
+}
+.loginBlock{
+    display: flex;
+
 }

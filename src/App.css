@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'Samurai';
+    src: local('Samurai'), url('./fonts/sayonara.woff') format('woff');
+}
+
 .app-wrapper{
+    font-family: Samurai;
     display: grid;
     grid-template-areas:
 "header header header"
@@ -9,7 +15,6 @@
     width: 990px;
     padding: 0 10px;
     grid-gap: 10px;
-
 }
 .app-wrapper-content{
     padding-top: 5px;
