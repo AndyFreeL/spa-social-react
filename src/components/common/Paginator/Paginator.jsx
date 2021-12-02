@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import s from "./Paginator.module.css";
+import arrow from '../../../assets/images/arrow.png'
 import cn from "classnames";
 
 
@@ -20,27 +21,33 @@ const Paginator = ({currentPage, totalItemsCount, pageSize, onPageChanged, porti
 
   return (
     <div className={s.paginatorLine}>
-      {portionNumber > 1 &&
-      <button onClick={() => {
+      <div className={cn(s.arrow, s.arrowPrev)}>{portionNumber > 1 &&
+      <div onClick={() => {
         setPortionNumber(portionNumber - 1)
-      }}>PREV</button>}
+      }}><img src={arrow}/></div>
+      }
+      </div>
 
-      {pages
-        .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
-        .map((p) => {
-          return <span className={cn({
-            [s.selectedPage]: currentPage === p
-          }, s.pageNumber)}
-                       key={p}
-                       onClick={(e) => {
-                         onPageChanged(p);
-                       }}>{p}</span>
-        })}
+      <div className={s.paginatorPages}>
+        {pages
+          .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
+          .map((p) => {
+            return <div className={s.paginatorPage}>
+              <span className={cn({
+                [s.selectedPage]: currentPage === p
+              }, s.pageNumber)}
+                    key={p}
+                    onClick={(e) => {
+                      onPageChanged(p);
+                    }}>{p}</span>
+            </div>
+          })}
+      </div>
 
       {portionCount > portionNumber &&
-      <button onClick={() => {
+      <div className={s.arrow} onClick={() => {
         setPortionNumber(portionNumber + 1)
-      }}>NEXT</button>}
+      }}><img src={arrow}/></div>}
 
     </div>
   );
