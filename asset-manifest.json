@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/spa-social-react/static/css/main.84a6b02f.chunk.css",
-    "main.js": "/spa-social-react/static/js/main.69ff64fa.chunk.js",
-    "main.js.map": "/spa-social-react/static/js/main.69ff64fa.chunk.js.map",
-    "runtime-main.js": "/spa-social-react/static/js/runtime-main.437db921.js",
-    "runtime-main.js.map": "/spa-social-react/static/js/runtime-main.437db921.js.map",
-    "static/js/2.5ba6d5cb.chunk.js": "/spa-social-react/static/js/2.5ba6d5cb.chunk.js",
-    "static/js/2.5ba6d5cb.chunk.js.map": "/spa-social-react/static/js/2.5ba6d5cb.chunk.js.map",
+    "main.css": "/spa-social-react/static/css/main.ce296936.chunk.css",
+    "main.js": "/spa-social-react/static/js/main.3f6036c6.chunk.js",
+    "main.js.map": "/spa-social-react/static/js/main.3f6036c6.chunk.js.map",
+    "runtime-main.js": "/spa-social-react/static/js/runtime-main.c8da5677.js",
+    "runtime-main.js.map": "/spa-social-react/static/js/runtime-main.c8da5677.js.map",
+    "static/js/2.cc9cbd97.chunk.js": "/spa-social-react/static/js/2.cc9cbd97.chunk.js",
+    "static/js/2.cc9cbd97.chunk.js.map": "/spa-social-react/static/js/2.cc9cbd97.chunk.js.map",
     "static/css/3.2d3660a9.chunk.css": "/spa-social-react/static/css/3.2d3660a9.chunk.css",
-    "static/js/3.e2346ef3.chunk.js": "/spa-social-react/static/js/3.e2346ef3.chunk.js",
-    "static/js/3.e2346ef3.chunk.js.map": "/spa-social-react/static/js/3.e2346ef3.chunk.js.map",
+    "static/js/3.719706a4.chunk.js": "/spa-social-react/static/js/3.719706a4.chunk.js",
+    "static/js/3.719706a4.chunk.js.map": "/spa-social-react/static/js/3.719706a4.chunk.js.map",
     "static/css/4.2c4581d5.chunk.css": "/spa-social-react/static/css/4.2c4581d5.chunk.css",
-    "static/js/4.77258ed0.chunk.js": "/spa-social-react/static/js/4.77258ed0.chunk.js",
-    "static/js/4.77258ed0.chunk.js.map": "/spa-social-react/static/js/4.77258ed0.chunk.js.map",
+    "static/js/4.e4863cf4.chunk.js": "/spa-social-react/static/js/4.e4863cf4.chunk.js",
+    "static/js/4.e4863cf4.chunk.js.map": "/spa-social-react/static/js/4.e4863cf4.chunk.js.map",
     "static/js/5.6d492d25.chunk.js": "/spa-social-react/static/js/5.6d492d25.chunk.js",
     "static/js/5.6d492d25.chunk.js.map": "/spa-social-react/static/js/5.6d492d25.chunk.js.map",
     "index.html": "/spa-social-react/index.html",
     "static/css/3.2d3660a9.chunk.css.map": "/spa-social-react/static/css/3.2d3660a9.chunk.css.map",
     "static/css/4.2c4581d5.chunk.css.map": "/spa-social-react/static/css/4.2c4581d5.chunk.css.map",
-    "static/css/main.84a6b02f.chunk.css.map": "/spa-social-react/static/css/main.84a6b02f.chunk.css.map",
-    "static/js/2.5ba6d5cb.chunk.js.LICENSE.txt": "/spa-social-react/static/js/2.5ba6d5cb.chunk.js.LICENSE.txt",
+    "static/css/main.ce296936.chunk.css.map": "/spa-social-react/static/css/main.ce296936.chunk.css.map",
+    "static/js/2.cc9cbd97.chunk.js.LICENSE.txt": "/spa-social-react/static/js/2.cc9cbd97.chunk.js.LICENSE.txt",
     "static/media/decorLogo.c3eda4a7.png": "/spa-social-react/static/media/decorLogo.c3eda4a7.png",
     "static/media/katanaBottom.f2cf9cca.png": "/spa-social-react/static/media/katanaBottom.f2cf9cca.png",
     "static/media/logout.e2f590b5.png": "/spa-social-react/static/media/logout.e2f590b5.png",
@@ -27,9 +27,9 @@
     "static/media/App.css": "/spa-social-react/static/media/sayonara.90fa5ff2.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.437db921.js",
-    "static/js/2.5ba6d5cb.chunk.js",
-    "static/css/main.84a6b02f.chunk.css",
-    "static/js/main.69ff64fa.chunk.js"
+    "static/js/runtime-main.c8da5677.js",
+    "static/js/2.cc9cbd97.chunk.js",
+    "static/css/main.ce296936.chunk.css",
+    "static/js/main.3f6036c6.chunk.js"
   ]
 }
