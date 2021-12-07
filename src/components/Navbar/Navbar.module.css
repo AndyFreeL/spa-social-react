@@ -1,8 +1,6 @@
 .body{
     width: 200px;
     top:75px;
-    position: fixed;
-    grid-area: navbar;
     height: 170px;
     display: flex;
     flex-direction: column;

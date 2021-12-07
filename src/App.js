@@ -5,6 +5,8 @@ import {HashRouter, Redirect, Route, Switch, withRouter} from "react-router-dom"
 import Rightbar from "./components/Rightbar/Rightbar";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
+import leftBg from './assets/images/leftbg.png';
+import rightBg from './assets/images/rightbg.png';
 import Login from "./components/Login/Login";
 import {connect} from "react-redux";
 import {compose} from "redux";
@@ -40,9 +42,11 @@ class App extends Component {
 
     return (
       <div className="app-wrapper">
+        <div className='bg-image'><img src={leftBg}/></div>
+        <div className='bg-image2'><img src={rightBg}/></div>
         <HeaderContainer/>
-        <Navbar/>
-        <Rightbar/>
+        <div className='leftSide'><Navbar/></div>
+        {/*<div  className='rightSide'><Rightbar/></div>*/}
         <div className="app-wrapper-content">
           <React.Suspense fallback={<div>!!!!!</div>}>
             <Switch>
@@ -55,6 +59,7 @@ class App extends Component {
             </Switch>
           </React.Suspense>
         </div>
+
       </div>
     );
   }

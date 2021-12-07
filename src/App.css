@@ -3,24 +3,62 @@
     src: local('Samurai'), url('./fonts/sayonara.woff') format('woff');
 }
 
-.app-wrapper{
+.app-wrapper {
     font-family: Samurai;
     display: grid;
     grid-template-areas:
 "header header header"
-"navbar content right";
+"left content right";
     grid-template-rows: 60px 1fr;
-    grid-template-columns: 3fr 8fr 3fr ;
+    grid-template-columns: 3fr 8fr 3fr;
     margin: 0 auto;
     width: 990px;
     padding: 0 10px;
     grid-gap: 10px;
 }
-.app-wrapper-content{
+
+.app-wrapper-content {
     padding-top: 5px;
     grid-area: content;
     /*background: #edeef0;*/
     /*border: 1px solid rgba(0,0,0,0.2);*/
     /*box-shadow: 5px 5px 15px rgba(0,0,0,0.2);*/
     /*border-radius: 5px;*/
+}
+
+.leftSide {
+    position: fixed;
+    position: fixed;
+    width: 200px;
+    top: 75px;
+    grid-area: left;
+}
+
+.rightSide {
+    position: fixed;
+    right: 265px;
+    width: 200px;
+    top: 75px;
+    grid-area: right;
+}
+
+.bg-image img {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    left: 30px;
+    top: 500px;
+    z-index: -3;
+    opacity: 0.3;
+
+}
+
+.bg-image2 img {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    right: 0;
+    top: 100px;
+    z-index: -3;
+    opacity: 0.3;
 }
