@@ -1,38 +1,66 @@
 .content{
 }
 .body{
-    display: grid;
-    grid-template-areas:
-"gAreaL gAreaR gAreaR";
-    grid-template-columns: 3fr 7fr ;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    height: 330px;
 }
-.gAreaL{
-    background: #edeef0;
+.infoArea{
     border: 1px solid rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
     border-radius: 5px;
-
-}
-.gAreaR{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
     background: #edeef0;
-    border: 1px solid rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
+    width:100%;
+    margin: 0 5px;
 }
-
-
+.leftArea{
+}
+.rightArea{
+    padding: 5px;
+}
 
 .photo{
-    padding: 10px;
+    margin: 5px;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
 }
-.photo img{
-    width: 200px;
-    height: 200px;
-    border-radius:5px ;
+
+.photoImg{
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius:5px 5px 5px 35px;
 }
-.about{
-    padding: 20px;
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(45, 45, 45, 0.6);
+    border-radius:5px 5px 5px 35px;
 }
+.photo:hover .overlay{
+    opacity:1;
+}
+
+.choosePhoto{
+    z-index: 3;
+    opacity: 1;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: #edeef0;
+    cursor: pointer;
+    border-radius: 10px 7px 7px 5px;
+}
+
 .status{
     cursor: pointer;
     font-size: 18px;
@@ -40,3 +68,31 @@
 .contact{
     color: blue;
 }
+.inputFile{
+    display: none;
+}
+label{
+float: right;
+}
+.btns{
+    padding: 8px 3px;
+    display: flex;
+    flex-direction: column;
+}
+.followBtn{
+margin: 2px 0;
+}
+.name{
+    padding: 5px;
+    font-size: 21px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.status{
+    font-size: 16px;
+}
+.personInfo{
+    padding: 10px 0 0 10px;
+}
+
+
+

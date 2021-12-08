@@ -16,7 +16,7 @@ const MyPosts = React.memo(props => {
 
   return (
     <div>
-      <h3>My Post</h3>
+      <h3>My Posts</h3>
       <MyPostReduxForm onSubmit={onAddPost}/>
       {postsElement}
     </div>
